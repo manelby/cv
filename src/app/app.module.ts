@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule, MatDividerModule, MatListModule} from '@angular/material';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -14,6 +15,7 @@ import {MatButtonModule, MatCheckboxModule, MatDividerModule, MatListModule} fro
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NoopAnimationsModule,
     MatButtonModule,
