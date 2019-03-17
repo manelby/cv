@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule, MatDividerModule, MatListModule} from '@angular/material';
 import {HttpClientModule} from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +23,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatButtonModule,
     MatCheckboxModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
