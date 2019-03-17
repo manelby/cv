@@ -10,12 +10,14 @@ import {HttpClient} from '@angular/common/http';
 })
 export class AppComponent {
   data: string;
+  backgroundVideoPath: string;
+  message: string;
   constructor(private http: HttpClient) {
     this.data = '';
+    this.backgroundVideoPath = './assets/html-background.mov';
+    this.message = 'under construction ...';
     this.getJSON().subscribe(data => {
       this.data = data;
-      console.log(data);
-      console.log(data.FirstName);
     });
   }
 

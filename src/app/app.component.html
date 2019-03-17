@@ -1,15 +1,12 @@
 
 <!-- header -->
 <app-header></app-header>
-<h1>{{data.FirstName}} {{data.LastName}}</h1>
+<video autoplay muted loop id="myVideo">
+  <source src={{backgroundVideoPath}} type="video/mp4">
+</video>
+<div id="message" class="overlay-effect h-100 w-100">
+  <h1>{{message}}</h1>
+</div>
 
-
-<!--<mat-list>
-  <mat-list-item>Item 1</mat-list-item>
-  <mat-divider></mat-divider>
-  <mat-list-item>Item 2</mat-list-item>
-  <mat-divider></mat-divider>
-  <mat-list-item>Item 3</mat-list-item>
-</mat-list> -->
 
 <router-outlet></router-outlet>
