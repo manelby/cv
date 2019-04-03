@@ -14,7 +14,7 @@ export class AppComponent {
   message: string;
   constructor(private http: HttpClient) {
     this.data = '';
-    this.backgroundVideoPath = './assets/html-background.mov';
+    this.backgroundVideoPath = './assets/html-background.mp4';
     this.message = 'under construction ...';
     this.getJSON().subscribe(data => {
       this.data = data;
