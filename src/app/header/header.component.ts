@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-header',
   template: `
     <div class="header">
-      <a href="#default" class="logo">manel BEN YAHIA</a>
+      <a href="#default" class="logo"><img src="../../assets/logo.png" alt="logo"></a>
       <div class="header-right">
         <a class="active" href="#home">Home</a>
         <a href="#cv">CV</a>
